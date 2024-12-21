@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jazz Survey Form</title>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/normalize.css" />
+		<link rel="icon" href="/images/saxofono.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1 id="title">Jazz Music Survey Form</h1>
+				<p id="description">
+					Thank you for taking the time to appreciate the genre!
+				</p>
+			</header>
+			<main>
+				<form action="#" id="survey-form">
+					<fieldset class="first-fieldset">
+						<!-- Name -->
+						<div class="form-group">
+							<label for="name" id="name-label">Name</label>
+							<input
+								type="text"
+								id="name"
+								placeholder="Enter your name"
+								required
+							/>
+						</div>
+						<!-- Email -->
+						<div class="form-group">
+							<label for="email" id="email-label">Email</label>
+							<input
+								type="email"
+								id="email"
+								placeholder="Enter your email"
+								required
+							/>
+						</div>
+						<!-- Age -->
+						<div class="form-group">
+							<label for="number" id="number-label">Age(optional)</label>
+							<input
+								type="number"
+								id="number"
+								min="8"
+								max="120"
+								placeholder="Age"
+							/>
+						</div>
+						<!-- Dropdown -->
+						<div class="form-group">
+							<label for="dropdown"
+								>What's your favorite Jazz subgenre?</label
+							>
+							<select id="dropdown">
+								<option value="">Select subgenre</option>
+								<option value="1">Fusion Jazz</option>
+								<option value="2">Acid Jazz</option>
+								<option value="3">Noir Jazz</option>
+								<option value="4">Swing Jazz</option>
+							</select>
+						</div>
+					</fieldset>
+					<!-- ** End of first fieldset -->
+					<fieldset class="second-fieldset">
+						<!-- Jazz liking -->
+						<div class="form-group">
+							<p>How much do you like jazz music?</p>
+							<label for="love"
+								><input
+									type="radio"
+									id="love"
+									name="state"
+									value="love"
+								/>
+								I love it</label
+							><br />
+							<label for="like"
+								><input
+									type="radio"
+									id="like"
+									name="state"
+									value="like"
+								/>
+								I like it</label
+							><br />
+							<label for="listen"
+								><input
+									type="radio"
+									id="listen"
+									name="state"
+									value="listen"
+								/>
+								I can listen to it</label
+							><br />
+							<label for="not"
+								><input
+									type="radio"
+									id="not"
+									name="state"
+									value="not"
+								/>I don't really like it</label
+							>
+						</div>
+						<!-- Instruments -->
+						<div class="form-group">
+							<p>What are your favorite instruments involved in jazz?</p>
+							<label for="saxophone"
+								><input type="checkbox" id="saxophone" value="saxophone"/>
+								Saxophone</label
+							><br />
+							<label for="trumpet"
+								><input type="checkbox" id="trumpet" value="trumpet" />
+								Trumpet</label
+							><br />
+							<label for="trombone"
+								><input
+									type="checkbox"
+									id="trombone"
+									value="trombone"
+								/>
+								Trombone</label
+							><br />
+							<label for="piano"
+								><input type="checkbox" id="piano" value="piano" />
+								Piano</label
+							><br />
+							<label for="double-bass"
+								><input
+									type="checkbox"
+									id="double-bass"
+									value="double-bass"
+								/>
+								Double Bass</label
+							><br />
+							<label for="drums"
+								><input type="checkbox" id="drums" value="drums" />
+								Drums</label
+							>
+						</div>
+						<!-- Suggestions -->
+						<div class="form-group">
+							<p>Any comments or suggestions?</p>
+							<textarea
+								id="comments"
+								cols="30"
+								rows="3"
+								placeholder="Enter your comments here..."
+							></textarea>
+						</div>
+					</fieldset>
+					<!-- ** End of second fieldset -->
+					<input type="submit" id="submit" value="Submit" />
+				</form>
+			</main>
+		</div>
+	</body>
+</html>
